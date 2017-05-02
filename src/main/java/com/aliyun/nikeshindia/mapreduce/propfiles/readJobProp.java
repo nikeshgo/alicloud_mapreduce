@@ -25,7 +25,9 @@ public class readJobProp {
 		
 	public void ReadPropertFile() throws IOException {
 		
-		input = new FileInputStream("/Users/nikeshgogia/Documents/AliCloud/AliCloud_Emapreduce/src/main/java/aliyun_config_job.properties");
+        String current = new java.io.File( "." ).getCanonicalPath();
+
+       	input = new FileInputStream(current+"/src/main/java/aliyun_config_job.properties");
 
 		// load a properties file
 		try {

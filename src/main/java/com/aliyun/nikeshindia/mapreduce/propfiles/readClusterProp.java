@@ -35,7 +35,9 @@ public class readClusterProp {
 		
 	public void ReadPropertFile() throws IOException {
 		
-		input = new FileInputStream("/Users/nikeshgogia/Documents/AliCloud/AliCloud_Emapreduce/src/main/java/aliyun_config_cluster.properties");
+        String current = new java.io.File( "." ).getCanonicalPath();
+
+       	input = new FileInputStream(current+"/src/main/java/aliyun_config_cluster.properties");
 
 		// load a properties file
 		try {
