@@ -1,6 +1,4 @@
-E-MapReduce Alibaba Cloud
-
-Java API
+Java Client for E-MapReduce Alibaba Cloud
 
 Build Status Java 8 Deployments
 
